@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend Tera">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luxurious Roman">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+
+<title>Commander</title>
+
+	<style>
+	body {
+	  background-image: url('images/background.jpeg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;  
+	  background-size: cover;
+	}
+	.wrapper-header {
+	  height: 30vh;
+	  /*This part is important for centering*/
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+	</style>
+    <!-- link to css -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<!--Navbar Section Starts Here-->
+	<nav>
+		<div class="wrapper wrapper ul wrapper li wrapper li a" >
+			
+			<div class="topnav menu">
+				<a href="index.html">HomePage</a>
+				<a href="biodata.html">Biodata</a>
+				<a href="commander.html" class="active">Commander</a>
+				<a href="education.html">Education</a>
+				<a href="experience.html">Experience</a>
+				<a href="family.html">Family</a>
+				<a href="friends.html">Friends</a>
+				<a href="hobby.html">Hobby</a>
+				<a href="music.html">Music</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+	</nav>
+	<!--Navbar Section End Here-->
+	
+	<!-- Commander PAGE START -->
+	<br><br><br><br><center><iframe src="https://free.timeanddate.com/clock/i85vq9gp/n122/fs20/tct/pct/ftb/tt0/tw1/tm1/tb4" frameborder="0" width="177" height="48" allowtransparency="true"></iframe>
+</center>
+	<div class="homepage" id="homepage">
+		<div class="wrapper-header">
+			<h1 style="text-align: center" class="header">COMMANDER</h1><br>
+		</div>
+		<center><pre style="color: black; font-weight: bold; font-size: 1.2em">“Once a commander always a commander"
+"Trained to be a leader"</pre><br>
+		<center>
+		<div class="commander-desc">While I was studying at UiTM Segamat.  I have joined commander because I interested in outdoor activities and to gained experience.
+I have learned a lot and I have managed to overcome some challenges to balance my academic during all semesters.
+I feel grateful that I sucess managed to be as a student and commander.</div></center>
+		<br><br><br>
+		
+		<div style="text-align:center" id="project"> 
+			<p style="font-family: Anton; color: black; font-size: 30px; letter-spacing: 2px;"><b>ROLLCALL PAGI</b></p>
+			<video id="video1" width="620">
+				<source src="video/IMG_9013.mp4" type="video/mp4">
+				<source src="video/IMG_9013.ogg" type="video/ogg">
+				Your browser does not support HTML video.
+			</video>
+			<br><br>
+			<button onclick="playPause()">Play/Pause</button> 
+			<button onclick="makeBig()">Big</button>
+			<button onclick="makeSmall()">Small</button>
+			<button onclick="makeNormal()">Normal</button>
+		</div>
+		
+		<br><br><br>
+		<p style="font-family: Anton; color: black; font-size: 30px; letter-spacing: 2px;"><b>COMMANDER GALLERY </b></p>
+		<a target="_blank" href="images/commander/Commander 1.jpeg">
+			<img src="images/commander/Commander 1.jpeg" alt="" style="width:30%">
+		</a>
+		
+		<a target="_blank" href="images/commander/Commander 2.jpg">
+			<img src="images/commander/Commander 2.jpg" alt="" style="width:30%">
+		</a>
+		
+		<a target="_blank" href="images/commander/Commander 3.jpg">
+			<img src="images/commander/Commander 3.jpg" alt="" style="width:30%">
+		</a>
+		
+		<a target="_blank" href="images/commander/Commander 5.jpg">
+			<img src="images/commander/Commander 5.jpg" alt="" style="width:30%">
+		</a>
+		
+		<a target="_blank" href="images/commander/Commander 6.jpg">
+			<img src="images/commander/Commander 6.jpg" alt="" style="width:30%">
+		</a>
+	</div>
+	<!-- Commander PAGE START -->
+	
+	<!-- FOOTER SECTION START -->
+	<center>
+		<div>
+			<p class="Luxurious-Roman">&copy; Nur Zafirah Syamimi Personal Website 2022 </p>
+		</div>
+	</center>
+	<!-- FOOTER SECTION ENDS -->
+	
+	<script> 
+	var myVideo = document.getElementById("video1"); 
+
+	function playPause() { 
+	  if (myVideo.paused) 
+		myVideo.play(); 
+	  else 
+		myVideo.pause(); 
+	} 
+
+	function makeBig() { 
+		myVideo.width = 900; 
+	} 
+
+	function makeSmall() { 
+		myVideo.width = 320; 
+	} 
+
+	function makeNormal() { 
+		myVideo.width = 620; 
+	} 
+	</script>
+</body>
+</html>

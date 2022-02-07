@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend Tera">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luxurious Roman">
+
+<title>Family</title>
+
+	<style>
+	body {
+	  background-image: url('images/background.jpeg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;  
+	  background-size: cover;
+	}
+	
+	table, th, td {
+		border: 0px solid black;
+		border-collapse: collapse;
+		padding: 10px;
+	}
+
+	th{
+		background: #E4C6D5;
+		font-size: 1.2em;
+	}
+	
+	tr{
+		color: white;
+	}
+	
+	tr:hover 
+	{
+		background-color: white;
+		color: black;
+	}
+	
+	.wrapper-header {
+	  height: 30vh;
+	  /*This part is important for centering*/
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+	</style>
+    <!-- link to css -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<!--Navbar Section Starts Here-->
+	<nav>
+		<div class="wrapper wrapper ul wrapper li wrapper li a" >
+			
+			<div class="topnav menu">
+				<a href="index.html">HomePage</a>
+				<a href="biodata.html">Biodata</a>
+				<a href="commander.html">Commander</a>
+				<a href="education.html">Education</a>
+				<a href="experience.html">Experience</a>
+				<a href="family.html" class="active">Family</a>
+				<a href="friends.html">Friends</a>
+				<a href="hobby.html">Hobby</a>
+				<a href="music.html">Music</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+	</nav>
+	<!--Navbar Section End Here-->
+	
+	<!-- FAMILY SECTION START -->
+	<br><br><br><br><center><<iframe src="https://free.timeanddate.com/clock/i85vq9gp/n122/fs20/tct/pct/ftb/tt0/tw1/tm1/tb4" frameborder="0" width="177" height="48" allowtransparency="true"></iframe></center>
+	<div id="family">
+		<div class="wrapper-header">
+			<h1 style="text-align: center" class="header">FAMILY</h1><br>
+		</div>
+		<center><pre style="color: black; font-weight: bold; font-size: 1.2em">"You don’t choose your family.
+They are God’s gift to you, 
+as you are to them."</pre>
+		<p style="font-style: italic">— Desmond Tutu</p></center><br>
+		<p style="font-style: italic; text-align: center">Click next icon to slide to the next picture</p></center><br>
+		
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 4</div>
+			  <img src="images/family/Family 1.jpg" style="width:100%; center">
+			  <div class="text">Black Theme Eid</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 4</div>
+			  <img src="images/family/Family 2.jpg" style="width:100%; center">
+			  <div class="text">My Parents</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 4</div>
+			  <img src="images/family/Family 3.jpg" style="width:100%; center">
+			  <div class="text">Family Hangout</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 4</div>
+			  <img src="images/family/Family 4.jpg" style="width:100%; center">
+			  <div class="text">Happy Birthday!</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+	</div><br><br>
+	<center>
+	<div class="tree" style="margin-left: 10%;">
+	<ul>
+				<li>
+					<b>FATHER :</b><br>NORMAN BIN NORDIN<br>+<br>
+          <b>MOTHER :</b><br>ZAKIAH BINTI MOHAMAD</a>
+					<ul>
+						<li>
+              MUHD NURZIKRY <br>BIN NORMAN
+            </li>
+						<li>
+							NUR ZAFIRAH SYAMIMI <br>BINTI NORMAN
+						</li>
+						<li>
+              MUHD NURZHARIF <br>BIN NORMAN
+            </li>
+            <li>
+              MUHD NURZHARFAN <br>BIN NORMAN
+            </li>
+            <li>
+              ANIQ NUQMAN ZAFRAN <br>BIN NORMAN
+            </li>
+					</ul>
+				</li>
+			</ul>
+	</ul>
+	</div></center>
+	<!-- FAMILY SECTION END -->
+	
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active-bullet", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active-bullet";
+	}
+	</script>
+	
+	<!-- FOOTER SECTION START -->
+	<center>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<div>
+			<p class="Luxurious-Roman">&copy; Nur Zafirah Syamimi Personal Website 2022 </p>
+		</div>
+	</center>
+	<!-- FOOTER SECTION ENDS -->
+	
+</body>
+</html> 

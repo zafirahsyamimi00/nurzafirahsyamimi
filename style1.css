@@ -1,0 +1,923 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ 
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif, Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  text-align: left;
+  /*background-color: #EDDDED;*/
+}
+
+
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.img-icon{
+	width: 80%;
+}
+
+.btn{
+	background-color: blue;
+	color: white;
+	padding: 2%;
+	text-decoration: none;
+}
+
+.btn:hover{
+	background-color: white;
+	color: blue;
+}
+
+.mb-5{
+	margin-bottom: 5%;
+}
+
+.mr-20{
+	margin-right:30%;
+}
+
+.ml-35{
+	margin-left: 35%;
+}
+
+.header{
+	color: black;
+	font-family: "Lexend Tera", sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	text-shadow: 2px 2px 5px grey;
+	letter-spacing: 0px;
+}
+
+a {
+  color: #2A002A;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #A897A8;
+  text-decoration: underline;
+}
+ 
+/*h1,h2,h3,h4,h5,h6,p{
+  color: #020202 !important;
+}*/
+
+.topnav {
+  overflow: hidden;
+  background-color:   #E4C6C6;
+  font-family: Verdana;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  color: black;
+  background-color: #C4BBD5;
+}
+
+.topnav a.active {
+  background-color: #C4BBD5;
+}
+
+.menu{
+	width: 100%;
+	float: right;
+}
+
+.col-2{
+	width: 49%;
+	float: left;
+} 
+
+.col-3{
+	width: 49%;
+	float: left;
+} 
+
+.Walter-Turncoat{
+	font-family: "Walter Turncoat";
+}
+	
+.Luxurious-Roman{
+	font-family:Luxurious Roman;  
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+.Cabin{
+	font-family: "Cabin";
+}
+	
+/********** Education CSS **********/
+.main-edu {
+  max-width: 1000px;
+  margin: auto;
+  float: center;
+}
+
+h4-edu {
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 5px;
+  padding-right: 5px;
+  
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  height: 350px;
+  color: black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/********** Friends CSS **********/
+.friends-gallery {
+  width: 600px;
+  margin: auto;
+  border-radius: 3px;
+  overflow: hidden;
+  //position: relative;
+}
+.img-c {
+  width: 200px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+  display: none;
+}
+
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+  //transform: translateX(-50%);
+}
+
+.img-c.postactive {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-c.active.positioned {
+  left: 0 !important;
+  top: 0 !important;
+  transition-delay: 50ms;
+}
+
+/********** Homepage CSS **********/
+.homepage{
+	margin-bottom: 5%;
+}
+
+.homepage-title{
+	font-family: "Bitter";
+	color: black;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.homepage-subtitle{
+	text-align: center;
+	font-weight: bold;
+	color: #4F454E;
+	margin-bottom: 5%;
+}
+
+/********** Experience CSS **********/
+div.experience {
+  margin: 5px;
+  float: left;
+  width: 320px;
+  height: 530px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.experience img {
+  width: 100%;
+  height: auto;
+}
+
+div.experience-desc {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  word-spacing: 5px;
+  font-family: "Red Hat Display";
+}
+
+/********** Friends CSS **********/
+div.friends {
+  margin: 5px;
+  float: left;
+  width: 320px;
+  height: 320px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.friends img {
+  width: 100%;
+  height: auto;
+}
+
+div.friends-desc {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  word-spacing: 5px;
+  font-family: "Red Hat Display";
+}
+
+/********** Biodata & Experience CSS **********/
+.biodata-exp{
+	margin-bottom: 5%;
+}
+
+.biodata-subtitle-exp{
+	font-family: Arial;
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 10%;
+}
+
+.rcorners4 {
+  border-radius: 15px;
+  color: black;
+  background: rgba(252, 151, 151, 0.2);
+  padding: 20px; 
+  width: 420px;
+  height: 330px; 
+}
+
+.rcorners4-contact {
+  border-radius: 15px;
+  color: black;
+  background: rgba(16,25,73,0.2);
+  padding: 20px; 
+  width: 700px;
+  height: 340px; 
+} 
+
+
+/********** Family CSS **********/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-bullet .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.tree ul {
+	padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	color:black;
+}
+
+.tree li {
+	color:black;
+	margin-left: 0%;
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 30px 15px 0 15px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	color: black;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+/********** Commander CSS **********/
+.commander-desc{
+	color: black;
+	width: 800px;
+	height: 125px;  
+	padding: 20px;
+	font-family: "Bitter";
+	font-weight: bold;
+	word-spacing: 3px;
+	line-height: 25px;
+}
+
+/********** Hobby CSS **********/
+.hobby-desc{
+	color: black;
+	width: 700px;
+	height: 125px;  
+	padding: 20px;
+	font-family: "Bitter";
+	font-weight: bold;
+	word-spacing: 3px;
+	line-height: 25px;
+}
+
+.rcorners-hobby {
+	font-size: 15px;
+  border-radius: 25px;
+  border: 2px solid #E685B5;
+  background: rgba(249, 204, 202,0.7);
+  padding: 1px; 
+  width: 150px;
+  height: 80px;  
+  padding-bottom: 30px;
+}
+
+/********** Gallery CSS **********/
+div.gallery {
+	background: white;
+}
+
+div.gallery:hover{
+	background-color: #BD7DBD;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 10px 10px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/********** Footer CSS **********/
+.btn-download {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn-download:hover {
+  background-color: RoyalBlue;
+}
+
+.fa-facebook:hover {
+	color: white;
+    opacity: 0.7;
+}
+
+.fa-instagram:hover {
+	color: white;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+	padding: 10px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 4px 4px;
+	background: #3B5998;
+	color: white;
+}
+
+.fa-instagram {
+	padding: 10px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 4px 4px;
+	background: #80609f;
+	color: white;
+}
+
+/********** Template CSS ************/
+
+
+.text-stroke-header {
+  -webkit-text-stroke: 3px #ffffff;
+  color: transparent;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+.btn-social {
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 45px;
+}
+
+.form-control {
+  border-radius: 25px;
+}
+
+
+/* ================ Navigation Menu ====================*/
+
+
+.navbar-light {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 25px 10px;
+  color: #343a40;
+  font-weight: 500;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0BCEAF;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+
+/*===================== Hero section ======================*/
+
+.about-img{
+ margin-left: -100px;
+ right: -60px;
+}
+
+.display-1{
+  font-size: 160px;
+  font-weight: 1000;
+  
+}
+ 
+.position-absolute{
+  font-weight: 700;
+  
+}
+
+.typed-cursor {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.blue{
+  background-color: #1c5ce6;
+  color: #ffffff;
+}
+.btn{
+  border: 2px solid rgb(29, 105, 247);
+} 
+.btn-white{
+  background-color: #ffffff;
+  border:2px solid #ffffff;
+}
+.btn-blue{
+  border: 2.4px solid #ffffff;
+  color: #ffffff;
+}
+@media (max-width: 700px) {
+  .about-img{
+    margin-left: 20px;
+    right: 0px;
+    top: 30px;
+   }
+}
+/*===================== Progress Bar ====================*/
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+
+/* =================== Queality ======================*/
+.ex-me{
+  margin-top: 35px;
+}
+
+
+/* =================== Service Section ==================*/
+.service-h4{
+  padding-bottom: 30px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+
+.service-box{
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+  margin-left: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.service-box:hover{
+  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+ 
+}
+/* =================== Portfolio section ==================*/
+
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+/* ====================== Testimonial ================*/
+.testimonial-carousel .text-center{
+  background-color: #eaecf0d0;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+.testimonial-carousel .text-center h4{
+
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: #0BCEAF;
+}
+
+
+
+/* ========================== Contact Us ========================*/
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/*====================== Back to buttom ==================*/
+
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
